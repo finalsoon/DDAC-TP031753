@@ -1,0 +1,58 @@
+﻿@model maerskline.Models.Shippment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Shippment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.departTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.departTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.arrivalTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.arrivalTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cargo.cargoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cargo.cargoID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Warehouse.warehouseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Warehouse.warehouseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Warehouse1.warehouseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Warehouse1.warehouseName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.shippmentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

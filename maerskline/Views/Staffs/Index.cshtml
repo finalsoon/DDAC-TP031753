@@ -1,0 +1,63 @@
+﻿@model IEnumerable<maerskline.Models.Staff>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.staffFN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.staffLN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.staffEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.staffContact)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.staffFN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.staffLN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.staffEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.staffContact)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.staffID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.staffID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.staffID })
+        </td>
+    </tr>
+}
+
+</table>

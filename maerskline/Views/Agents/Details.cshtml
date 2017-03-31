@@ -1,0 +1,66 @@
+﻿@model maerskline.Models.Agent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Agent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agentFN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agentFN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agentLN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agentLN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agentEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agentEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.agentContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.agentContact)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.agentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

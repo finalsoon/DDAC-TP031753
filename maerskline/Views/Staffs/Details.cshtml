@@ -1,0 +1,66 @@
+﻿@model maerskline.Models.Staff
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Staff</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staffFN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staffFN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staffLN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staffLN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staffEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staffEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staffContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staffContact)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.staffID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
